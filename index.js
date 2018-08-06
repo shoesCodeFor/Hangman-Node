@@ -22,7 +22,8 @@ function guessPrompt(){
         });
     }
     else{
-
+        console.log("Game Over, thanks for playing!");
+        console.log(`Your word was: `);
     }
 }
 guessPrompt();
