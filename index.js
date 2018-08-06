@@ -9,6 +9,13 @@ var prompt = inquirer.createPromptModule();
 function guessPrompt(){
     prompt({
         name: "guessedLetter",
+        type: "input",
         message: "Please guess a letter in the word"        
-    }).then(console.log());
+    }).then(answers =>{
+        // Send off the quessed letter
+        
+        console.log(answers);
+        guessPrompt();
+    });
 }
+guessPrompt();
